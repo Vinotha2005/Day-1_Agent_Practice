@@ -28,7 +28,7 @@ expense-agent-project/
 
 ```bash
 pip install -r requirements.txt
-export ANTHROPIC_API_KEY="your-key-here"   # optional — see Demo mode below
+
 ```
 
 ## Run each approach
@@ -42,7 +42,7 @@ python agent.py
 ## Demo mode
 
 `chatbot.py` and `agent.py` will run and print realistic output even
-without an `ANTHROPIC_API_KEY` set, so the three programs can be run and
+without an `API_KEY` set, so the three programs can be run and
 screenshotted end-to-end without needing API access. `agent.py` in demo
 mode still prints every reasoning step, tool call, and observation in the
 loop so the LLM+Tools+Loop pattern is visible either way.
