@@ -24,7 +24,7 @@ import json
 import os
 
 try:
-    import anthropic
+    import key
     HAS_SDK = True
 except ImportError:
     HAS_SDK = False
@@ -103,8 +103,8 @@ TOOL_FUNCTIONS = {
 
 
 def run_agent_live(user_message: str) -> str:
-    """Real ReAct-style loop using the Anthropic API and tool calling."""
-    client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+    
+    client = key.Key(api_key=os.environ["API_KEY"])
     messages = [{"role": "user", "content": user_message}]
 
     for _ in range(6):  # loop: keep going until the model stops calling tools
@@ -139,7 +139,7 @@ def run_agent_live(user_message: str) -> str:
 
 def run_agent_demo(user_message: str) -> str:
     """
-    DEMO MODE (no ANTHROPIC_API_KEY set): manually walks through the same
+    DEMO MODE (API_KEY set): manually walks through the same
     reason -> act -> observe -> repeat loop so the agent's behavior can
     still be seen and screenshotted without an API key.
     """
