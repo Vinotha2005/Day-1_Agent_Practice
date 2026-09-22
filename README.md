@@ -28,7 +28,7 @@ This one's basically ChatGPT with no extra powers. It can talk, but it
 food," it has no idea — it just apologizes and asks me to type the numbers
 in myself. It's honestly a bit useless for this task, and that's exactly
 the lesson: a plain chatbot only knows what you type into it.
-<img width="900" height="732" alt="01_chatbot" src="https://github.com/user-attachments/assets/d3a00f7e-8926-45dc-8a71-43dfba8f4152" />
+<img width="500" height="732" alt="01_chatbot" src="https://github.com/user-attachments/assets/d3a00f7e-8926-45dc-8a71-43dfba8f4152" />
 
 ### 2. `rule_based.py` — a bunch of hardcoded if/else rules
 This one has zero AI in it. It's just plain code I wrote myself that says
@@ -38,7 +38,7 @@ exact questions I thought to code for. Ask it anything slightly different,
 like "predict my spending next month," and it just shrugs with a fixed
 error message. It's reliable but rigid — like a vending machine, not an
 assistant.
-<img width="900" height="684" alt="02_rule_based" src="https://github.com/user-attachments/assets/501ed40e-ff2f-46a6-85cc-2b71d973a686" />
+<img width="500" height="684" alt="02_rule_based" src="https://github.com/user-attachments/assets/501ed40e-ff2f-46a6-85cc-2b71d973a686" />
 
 
 ### 3. `agent.py` — the real deal: LLM + Tools + a Loop
@@ -50,7 +50,7 @@ pre-coded anywhere. The agent reasoned it out: grab the Travel total, grab
 the Entertainment total, subtract, answer. It kept looping — call a tool,
 look at the result, decide the next step — until it actually had the
 answer. That loop is the whole magic of an "agent" vs a regular script.
-<img width="900" height="948" alt="03_agent" src="https://github.com/user-attachments/assets/3972c931-f3d9-475e-94ad-fb6ca8021ba1" />
+<img width="500" height="948" alt="03_agent" src="https://github.com/user-attachments/assets/3972c931-f3d9-475e-94ad-fb6ca8021ba1" />
 
 
 ## Folder structure
